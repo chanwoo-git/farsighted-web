@@ -1,23 +1,52 @@
 body {
   margin-left: 200px;
   margin-right: 200px;
+
+  overflow: scroll;
 }
 
 a {
   text-decoration: none;
 }
+#title {
+  display: block;
+  position: relative;
+  top: 4px;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: 'Black Han Sans', sans-serif;
+  text-align: center;
+  background-color: gray;
+  box-shadow: 8px 10px #666;
+  border-radius: 15px;
+  width: 30%;
+  margin: 30px auto 30px auto;
+}
 
 header {
-  text-align: center;
-  border-bottom: 1px dotted
+  border-bottom: 1px dotted;
 }
 
 main {
   display: flex;
 }
 
-section {
+article {
   margin-left: 30px;
   padding-left: 15px;
   border-left: 1px dotted;
 }
+
+button {
+  position: absolute;
+  right: 200px;
+  top: 100px;
+}
+
+/*  Selector, Declaration(선언, 효과), Property: Value */
+
+/*  만약 가운데 정렬을 했는데 페이지마다 가운데의 위치가 조금씩 다른 경우 
+    혹시 다른 페이지에는 스크롤 바가 존재하는데 움직임이 있는 페이지는 스크롤바가
+    없는건 아닌지 한번 확인해 볼 것. 그 반대의 경우도 */
